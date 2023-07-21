@@ -1,0 +1,497 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
+}
+
+header {
+    background-color: rgb(26, 26, 65);
+}
+
+/**********************************************Navigation bar******************************************************8*/
+.nav_bar {
+    height: 100px;
+    width: 100%;
+    font-size: 20px;
+    background-color: rgb(27, 27, 65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+
+/* navlogo */
+.nav_logo {
+    width: 20%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav_logo img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+/* navlinks */
+.nav_links {
+    width: 50%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav_links a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/************************************hero section************************************/
+.hero_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    background: radial-gradient(rgba(12, 12, 12, 0.5), rgba(33, 24, 24, 0.6)), url('hero.jpg');
+    width: 95%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.img p {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+
+.para1 {
+    font-size: 4.5rem;
+}
+
+.para2 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+/**************************************about section****************************************/
+.about {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about_para {
+    width: 40%;
+    color: rgb(205, 201, 201);
+    line-height: 1.5rem;
+}
+
+.about_para h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(231, 88, 88);
+    animation-name: heading_animate;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+
+@keyframes heading_animate {
+    from {
+        transform: translatey(-50px);
+    }
+
+    to {
+        transform: translatey(0px);
+    }
+}
+
+.about_para .p1 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    animation-name: p_animate;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.about_para .p2 {
+    font-size: 1rem;
+}
+
+@keyframes p_animate {
+    from {
+        transform: translate(-50px);
+    }
+
+    to {
+        transform: translate(0px);
+    }
+}
+
+.about_para .pa {
+    margin-top: 10px;
+    height: 40px;
+    width: 180px;
+    border: 2px solid rgb(231, 88, 88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_para .pa:hover {
+    background-color: rgb(231, 88, 88);
+}
+
+.about_para .pa a {
+    color: rgb(231, 88, 88);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.about_para .pa a:hover {
+    color: black;
+}
+
+.about_image {
+    height: 400px;
+    width: 50%;
+    background-image: url('about_image_buddha.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+/*******************************Service**************************************/
+.main_body {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.main_body h2 {
+    color: rgb(231, 88, 88);
+    margin-bottom: 40px;
+    animation-name: h2_animate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes h2_animate {
+    from {
+        transform: translatey(-20px);
+    }
+
+    to {
+        transform: translatey(20px);
+    }
+}
+
+.service {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(231, 88, 88);
+}
+
+.service a {
+    color: rgb(14, 10, 22);
+    text-decoration: none;
+}
+
+/* box1 : darshan */
+.darshan {
+    height: 350px;
+    width: 18%;
+    border: 1px solid rgb(26, 26, 65);
+}
+
+.darshan:hover {
+    transform: translatey(-40px);
+}
+
+.darshan_image {
+    height: 80%;
+    width: 100%;
+    background-image: url('darshan.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.darshan_para {
+    padding-top: 20px;
+    font-size: 1rem;
+}
+
+
+/* box2 : meditation */
+.meditation {
+    height: 350px;
+    width: 18%;
+    border: 1px solid rgb(26, 26, 65);
+}
+
+.meditation:hover {
+    transform: translatey(40px);
+}
+
+.meditation_image {
+    height: 80%;
+    width: 100%;
+    background-image: url('meditation.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.meditation_para {
+    padding-top: 20px;
+    font-size: 1rem;
+}
+
+/* box3 : kheer */
+.kheer {
+    height: 350px;
+    width: 18%;
+    border: 1px solid rgb(26, 26, 65);
+}
+
+.kheer:hover {
+    transform: translatey(-40px);
+}
+
+.kheer_image {
+    height: 80%;
+    width: 100%;
+    background-image: url('kheer.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.kheer_para {
+    padding-top: 20px;
+    font-size: 1rem;
+}
+
+/* box4 : chanting */
+.chanting {
+    height: 350px;
+    width: 18%;
+    border: 1px solid rgb(26, 26, 65);
+}
+
+.chanting:hover {
+    transform: translatey(40px);
+}
+
+.chanting_image {
+    height: 80%;
+    width: 100%;
+    background-image: url('chanting.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.chanting_para {
+    padding-top: 20px;
+    font-size: 1rem;
+}
+
+/*********************************** events *************************************/
+.events {
+    width: 100%;
+}
+
+/* events heading */
+.events h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(231, 88, 88);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    animation-name: event_h2_animate;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes event_h2_animate {
+    from {
+        transform: translatey(-20px);
+    }
+
+    to {
+        transform: translatey(20px);
+    }
+}
+
+/* first event */
+.first_event {
+    width: 98%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event1_image {
+    height: 80%;
+    width: 40%;
+    background-image: url('drarma_talk.png');
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
+}
+
+.event1_para {
+    font-size: 1.5rem;
+    color: rgb(231, 88, 88);
+    animation-name: event1_para;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes event1_para {
+    from {
+        transform: translatey(-100px)
+    }
+
+    to {
+        transform: translate(0px);
+    }
+}
+
+.event1_para a {
+    color: rgb(26, 26, 65);
+    text-decoration: none;
+}
+
+/* second event */
+.second_event {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event2_image {
+    height: 70%;
+    width: 40%;
+    background-image: url('meditation_challenge.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-left: 20px;
+}
+
+.event2_para {
+    font-size: 1.5rem;
+    color: rgb(231, 88, 88);
+    animation-name: event2_para;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes event2_para {
+    from {
+        transform: translatey(-100px)
+    }
+
+    to {
+        transform: translate(0px);
+    }
+}
+
+.event2_para a {
+    color: rgb(26, 26, 65);
+    text-decoration: none;
+}
+
+
+/************************************ footer ********************************/
+.footer {
+    height: 600px;
+    width: 100%;
+    background-color: rgb(26, 26, 65);
+    color: rgb(231, 88, 88);
+    margin-top: 30px;
+}
+
+/* upper footer */
+.upper_footer {
+    text-align: center;
+}
+
+.footer_image img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.upper_footer p {
+    font-size: 1.5rem;
+}
+
+/* lower footer */
+.lower_footer {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.lower_footer i {
+    color: white;
+    font-size: larger;
+    margin-top: 10px;
+}
+
+#lp1 {
+    font-size: 1.3rem;
+    color: rgb(231, 88, 88);
+}
+
+#lp2 {
+    font-size: 1.3rem;
+    color: rgb(231, 88, 88);
+}
+
+/* contact */
+.contact_links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* follow */
+.follow_links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.copy {
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+}
